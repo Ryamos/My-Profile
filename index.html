@@ -2,124 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="images/rc_logo.png" sizes="16x16 32x32 64x64 128x128" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="images/rc_logo.png"
+      sizes="16x16 32x32 64x64 128x128"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Ceasar C. Ramos - Resume</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-      }
-      .container {
-        position: relative;
-        max-width: 800px;
-        margin: 20px auto;
-        background: #fff;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-      h1,
-      h2 {
-        color: #444;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      li {
-        margin-bottom: 10px;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      .navbar {
-        background-color: #333;
-        overflow: hidden;
-      }
-      .navbar a {
-        float: right;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 10px 12px;
-        text-decoration: none;
-      }
-      .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      .navbar a.active {
-        background-color: #555;
-        color: white;
-      }
-      .profile-image {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      }
-      footer {
-        background-color: #333;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 5px 0;
-        margin-top: 10px;
-        font-size: 11px;
-      }
-      footer p {
-        margin: 0;
-      }
-      @media (max-width: 600px) {
-        .container {
-          padding: 10px;
-        }
-        .navbar a {
-          float: none;
-          text-align: right;
-        }
-      }
-      #backToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  background-color: #007BFF; /* Attractive blue color */
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, opacity 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#backToTop:hover {
-  background-color: #0056b3; /* Slightly darker blue on hover */
-  transform: scale(1.1);
-}
-
-#backToTop svg {
-  width: 24px;
-  height: 24px;
-}
-
-    </style>
+    <title>RC's Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="navbar">
-      <a href="hobbies.html" >Hobbies</a>
-      <a href="contact.html">Contact</a>
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Ryan Ceasar Ramos's Resume</a>
     </div>
 
     <div class="container">
@@ -129,24 +31,31 @@
         class="profile-image"
       />
       <h1>Ryan Ceasar C. Ramos</h1>
-      <p>Poblacion 8, Cuenca Batangas</p>
-      <p>
-        Email:
-        <a href="mailto:ramosryanceasar@gmail.com">ramosryanceasar@gmail.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/ryan-ceasar-ramos/" target="_blank"
-          >www.linkedin.com/in/ryan-ceasar-ramos/</a
-        >
-      </p>
+      <div class="contact-info">
+        <p>09563925000</p>
+        <p>Poblacion 8, Cuenca Batangas</p>
+        <p>
+          Email:
+          <a href="mailto:ramosryanceasar@gmail.com"
+            >ramosryanceasar@gmail.com</a
+          >
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/ryan-ceasar-ramos/"
+            target="_blank"
+            >www.linkedin.com/in/ryan-ceasar-ramos/</a
+          >
+        </p>
+      </div>
 
       <div class="section">
         <h2>Objectives</h2>
         <p>
           I am a 4th-year IT student with basic knowledge in Database Management
-          (MySQL) and technical problem-solving. I aim to start an internship in
-          a dynamic work environment and leverage my soft skills to build strong
+          (MySQL) and technical problem-solving. I aim to start in a dynamic
+          work environment and leverage my soft skills to build strong
           relationships with clients and team members.
         </p>
       </div>
@@ -172,16 +81,27 @@
 
       <div class="section">
         <h2>Skills</h2>
-        <ul>
-          <li>
-            <strong>Technical Skills:</strong> Basic knowledge of HTML, CSS,
-            JavaScript, MySQL, and PHP
-          </li>
-          <li>
-            <strong>Soft Skills:</strong> Attention to Detail, Problem-Solving,
-            Communication, Adaptability
-          </li>
-        </ul>
+        <div class="skills-container">
+          <div class="skills-column">
+            <strong>Technical Skills:</strong>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <strong>Soft Skills:</strong>
+            <ul>
+              <li>Attention to Detail</li>
+              <li>Problem-Solving</li>
+              <li>Communication</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="section">
@@ -197,14 +117,35 @@
         <h2>Experiences</h2>
         <ul>
           <li>
-            <strong>Data Entry Assistant</strong>, Cuenca, Batangas (Aug 13,
-            2024 - Sep 19, 2024)<br />Accurately inputting and updating data
-            into databases, spreadsheets, or software systems.
+            <strong>Data Entry Assistant</strong><br />
+            <span class="tabbed"
+              >Accurately inputting and updating data into databases,
+              spreadsheets, or software systems.</span
+            >
+            <span class="tabbed"
+              >Cuenca, Batangas (Aug 13, 2024 - Sep 19, 2024)</span
+            >
           </li>
+
           <li>
-            <strong>Gym Receptionist</strong>, Axyz Backyard, Cuenca (May 15,
-            2024 - Present)<br />Managing membership sign-ups, renewals, and
-            inquiries.
+            <strong>Gym Receptionist</strong><br />
+            <span class="tabbed"
+              >Axyz Backyard, Cuenca (May 15, 2024 - Present)</span
+            >
+            <span class="tabbed"
+              >Managing membership sign-ups, renewals, and inquiries.</span
+            >
+          </li>
+
+          <li>
+            <strong>Service Crew</strong><br />
+            <span class="tabbed"
+              >Cuenca, Batangas (April 2023 - July 2024)</span
+            >
+            <span class="tabbed"
+              >Efficiently served customers, kept the area clean, and ensured
+              quality service in a busy setting.</span
+            >
           </li>
         </ul>
       </div>
@@ -229,34 +170,42 @@
         </ul>
       </div>
     </div>
+
     <footer>
       <center>
-        <p style="font-size: small">
-          &copy; 2024 Ryan Ceasar C. Ramos. All rights reserved.
-        </p>
+        <p>&copy; 2024 Ryan Ceasar C. Ramos. All rights reserved.</p>
       </center>
     </footer>
+
     <button id="backToTop" title="Go to top">
-      <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="white">
-        <path d="M12 4L4 12h5v8h6v-8h5z"/>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        width="24"
+        viewBox="0 0 24 24"
+        fill="white"
+      >
+        <path d="M12 4L4 12h5v8h6v-8h5z" />
       </svg>
     </button>
-    
+
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          backToTopButton.style.display = "flex";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+
+      backToTopButton.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
   </body>
-  <script>
-    const backToTopButton = document.getElementById('backToTop');
-  
-    window.onscroll = function () {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTopButton.style.display = 'flex'; // Flex for centering the icon
-      } else {
-        backToTopButton.style.display = 'none';
-      }
-    };
-  
-    backToTopButton.onclick = function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-  </script>
-  
 </html>
